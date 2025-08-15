@@ -38,8 +38,8 @@
                                 <form action="{{ route('users.destroy', $user) }}" method="POST" style="display:inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button onclick="return confirm('Hapus user ini?')" class="btn btn-sm btn-danger">
-                                        <i class="fas fa-trash"></i>
+                                    <button type="button" class="btn btn-danger btn-sm btn-delete">
+                                            <i class="fas fa-trash"></i>
                                     </button>
                                 </form>
                             </td>
@@ -56,4 +56,7 @@
     </div>
 
 </div>
+
+@include('components.delete-alert')
+
 @endsection

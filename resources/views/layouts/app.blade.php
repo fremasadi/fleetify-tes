@@ -4,11 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Fleetify') }}</title>
 
-    <!-- Custom fonts for this template-->
     <link href="{{ asset('sb-admin2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template-->
     <link href="{{ asset('sb-admin2/css/sb-admin-2.min.css') }}" rel="stylesheet">
 </head>
 
@@ -53,16 +51,17 @@
     </a>
 
     <!-- Fonts -->
-<link href="{{ asset('sb-admin-2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('sb-admin-2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
 
-<!-- Custom styles -->
-<link href="{{ asset('sb-admin-2/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <!-- Custom styles Sb-admin2 -->
+    <link href="{{ asset('sb-admin-2/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-<!-- Scripts -->
-<script src="{{ asset('sb-admin-2/vendor/jquery/jquery.min.js') }}"></script>
-<script src="{{ asset('sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('sb-admin-2/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
-<script src="{{ asset('sb-admin-2/js/sb-admin-2.min.js') }}"></script>
+    <!-- Scripts -->
+    <script src="{{ asset('sb-admin-2/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('sb-admin-2/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('sb-admin-2/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+    <script src="{{ asset('sb-admin-2/js/sb-admin-2.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

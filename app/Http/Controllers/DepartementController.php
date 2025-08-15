@@ -31,7 +31,7 @@ class DepartementController extends Controller
     public function store(StoreDepartementRequest $request)
     {
         $this->service->createDepartement(new DepartementDTO($request->validated()));
-        return redirect()->route('departements.index')->with('success', 'Departement created successfully.');
+        return redirect()->route('departements.index')->with('Berhasil', 'Departement Berhasil Dibuat.');
     }
 
     public function edit(Departement $departement)
@@ -42,12 +42,12 @@ class DepartementController extends Controller
     public function update(UpdateDepartementRequest $request, Departement $departement)
     {
         $this->service->updateDepartement($departement, new DepartementDTO($request->validated()));
-        return redirect()->route('departements.index')->with('success', 'Departement updated successfully.');
+        return redirect()->route('departements.index')->with('success', 'Departement Berhasil Diupdate.');
     }
 
     public function destroy(Departement $departement)
     {
         $this->service->deleteDepartement($departement);
-        return redirect()->route('departements.index')->with('success', 'Departement deleted successfully.');
+        return redirect()->route('departements.index')->with('success', 'Departement Berhasil Dihapus.');
     }
 }

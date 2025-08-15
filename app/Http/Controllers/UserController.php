@@ -32,7 +32,7 @@ class UserController extends Controller
     public function store(StoreUserRequest $request)
     {
         $this->service->createUser(new UserDTO($request->validated()));
-        return redirect()->route('users.index')->with('success', 'User created successfully.');
+        return redirect()->route('users.index')->with('Berhasil', 'User Berhasil Dibuat.');
     }
 
     public function edit(User $user)
@@ -43,12 +43,12 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, User $user)
     {
         $this->service->updateUser($user, new UserDTO($request->validated()));
-        return redirect()->route('users.index')->with('success', 'User updated successfully.');
+        return redirect()->route('users.index')->with('Berhasil', 'User Berhasil DiUpdate.');
     }
 
     public function destroy(User $user)
     {
         $this->service->deleteUser($user);
-        return redirect()->route('users.index')->with('success', 'User deleted successfully.');
+        return redirect()->route('users.index')->with('Berhasil', 'User Berhasil Dihapus.');
     }
 }
