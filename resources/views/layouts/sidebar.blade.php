@@ -18,15 +18,24 @@
         </a>
     </li>
     @if(auth()->check() && auth()->user()->role === 'admin')
-<li class="nav-item">
-    <a class="nav-link" href="{{ route('users.index') }}">
-        <i class="fas fa-users"></i>
-        <span>Manajemen Pengguna</span>
-    </a>
-</li>
-@endif
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('users.index') }}">
+            <i class="fas fa-users"></i>
+            <span>Manajemen Pengguna</span>
+        </a>
+    </li>
+    @endif
 
-</li>
+
+    @if(auth()->user()->role === 'admin')
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('departements.index') }}">
+            <i class="fas fa-building"></i>
+            <span>Manajemen Departemen</span>
+        </a>
+    </li>
+    @endif
+
 
 
     <!-- Divider -->

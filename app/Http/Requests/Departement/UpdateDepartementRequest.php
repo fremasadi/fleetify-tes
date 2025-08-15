@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests\Department;
+namespace App\Http\Requests\Departement;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreDepartmentRequest extends FormRequest
+class UpdateDepartementRequest extends FormRequest
 {
     public function authorize(): bool
     {
