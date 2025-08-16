@@ -4,7 +4,9 @@
 Fleetify Absensi System adalah aplikasi untuk mencatat kedisiplinan karyawan secara manual. Sistem ini memungkinkan pencatatan absensi masuk dan keluar karyawan, pengelompokan berdasarkan departemen, serta menampilkan laporan ketepatan absensi.  
 
 **Link Aplikasi:** [http://fleetify.frecode.my.id](http://fleetify.frecode.my.id)
-
+### 🔑 Akun Login (Demo)
+- **Email:** `admin@gmail.com`  
+- **Password:** `password123` 
 **Tujuan Sistem:**  
 - Mempermudah monitoring absensi karyawan  
 - Memudahkan evaluasi kedisiplinan berdasarkan waktu masuk & keluar  
@@ -24,7 +26,19 @@ Fleetify Absensi System adalah aplikasi untuk mencatat kedisiplinan karyawan sec
 - **Backend:** Laravel  
 - **Frontend:** Laravel dengan template **SB Admin 2** dan menggunakan **Laravel Breeze** untuk autentikasi  
 - **Database:** MySQL  
-- **Hosting:** [http://fleetify.frecode.my.id](http://fleetify.frecode.my.id)  
+
+---
+
+## 🔐 Autentikasi dengan Laravel Breeze
+Fleetify Absensi menggunakan **Laravel Breeze** sebagai sistem autentikasi default.  
+Dengan Breeze, sistem ini sudah mendukung:
+- Login & Register pengguna  
+- Logout  
+- Reset password (menggunakan `password_reset_tokens`)  
+- Session management (tabel `sessions`)  
+
+> 📌 **Catatan:** Aplikasi ini hanya mengaktifkan login untuk **Admin** dan **Karyawan**.  
+> Role ditentukan di tabel `users.role`.  
 
 ---
 
