@@ -8,7 +8,7 @@
 
     <div class="card shadow">
         <div class="card-body">
-            <form action="{{ route('departments.store') }}" method="POST">
+            <form action="{{ route('departements.store') }}" method="POST">
                 @csrf
 
                 <div class="form-group">
@@ -32,7 +32,7 @@
                 <button type="submit" class="btn btn-success">
                     <i class="fas fa-save"></i> Simpan
                 </button>
-                <a href="{{ route('departments.index') }}" class="btn btn-secondary">
+                <a href="{{ route('departements.index') }}" class="btn btn-secondary">
                     <i class="fas fa-arrow-left"></i> Kembali
                 </a>
             </form>

@@ -24,4 +24,16 @@ class Employee extends Model
     {
         return $this->belongsTo(Departement::class, 'departement_id');
     }
+
+    public function attendances()
+    {
+        return $this->hasMany(Attendance::class, 'employee_id');
+    }
+
+    public function attendanceHistories()
+    {
+        return $this->hasMany(AttendanceHistory::class, 'employee_id');
+    }
+
+   
 }

@@ -42,12 +42,12 @@ class DepartementController extends Controller
     public function update(UpdateDepartementRequest $request, Departement $departement)
     {
         $this->service->updateDepartement($departement, new DepartementDTO($request->validated()));
-        return redirect()->route('departements.index')->with('success', 'Departement Berhasil Diupdate.');
+        return redirect()->route('departements.index')->with('Berhasil', 'Departement Berhasil Diupdate.');
     }
 
     public function destroy(Departement $departement)
     {
         $this->service->deleteDepartement($departement);
-        return redirect()->route('departements.index')->with('success', 'Departement Berhasil Dihapus.');
+        return redirect()->route('departements.index')->with('Berhasil', 'Departement Berhasil Dihapus.');
     }
 }

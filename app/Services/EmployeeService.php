@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Employee;
 use App\Repositories\EmployeeRepository;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class EmployeeService
 {
