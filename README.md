@@ -21,15 +21,15 @@ Fleetify Absensi System adalah aplikasi untuk mencatat kedisiplinan karyawan sec
 ---
 
 ## Teknologi & Arsitektur
-- **Backend:** PHP / Laravel (sesuaikan jika pakai Golang)  
-- **Frontend:** PHP / JS (Laravel / NextJS)  
+- **Backend:** Laravel  
+- **Frontend:** Laravel dengan template **SB Admin 2** dan menggunakan **Laravel Breeze** untuk autentikasi  
 - **Database:** MySQL  
 - **Hosting:** [http://fleetify.frecode.my.id](http://fleetify.frecode.my.id)  
 
 ---
 
 ## ERD & Flowchart
-(Sertakan screenshot atau link diagram yang sudah dibuat)  
+![ERD Fleetify Absensi](db_fleetify.png)
 
 **Tabel Utama:**  
 - **Karyawan:** Menyimpan data karyawan  
@@ -42,20 +42,21 @@ Fleetify Absensi System adalah aplikasi untuk mencatat kedisiplinan karyawan sec
 ## Cara Menggunakan / User Guide
 
 ### Admin:
-1. Login ke sistem (jika ada fitur login)  
+1. Login ke sistem menggunakan akun admin  
 2. Tambah / edit / hapus karyawan  
 3. Tambah / edit / hapus departemen  
 4. Lihat laporan absensi dengan filter tanggal & departemen  
 
 ### Karyawan:
-1. Pilih **Riwayat Absens**  
-2. Pilih **Absen Keluar & Masuk**  
-3. Lihat laporan absensi (opsional)  
+1. Login ke sistem menggunakan akun karyawan  
+2. Pilih **Riwayat Absensi**  
+3. Pilih **Absen Masuk / Absen Keluar**  
+
+---
 
 ## Catatan Khusus
-- Sistem absensi bersifat manual karena **tidak ada ketentuan khusus** mengenai jam masuk/keluar atau shift karyawan.  
-- Laporan absensi dapat difilter berdasarkan tanggal dan departemen.  
-- Sistem dapat dikembangkan lebih lanjut dengan fitur login, notifikasi, atau integrasi ke perangkat absensi.
+- Sistem absensi bersifat manual karena **tidak ada ketentuan khusus** 
+- Laporan absensi dapat difilter berdasarkan tanggal dan departemen  
 
 ---
 
