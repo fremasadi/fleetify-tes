@@ -5,7 +5,6 @@
 
 
 
-{{-- Jika role admin --}}
 @if(Auth::user()->role === 'admin')
 <div class="row">
     <div class="col-md-4 mb-4">
@@ -57,7 +56,6 @@
 </div>
 @endif
 
-{{-- Jika role karyawan --}}
 @if(Auth::user()->role === 'employee')
 <div class="row">
     <div class="col-md-6 mb-4">

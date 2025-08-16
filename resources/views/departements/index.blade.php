@@ -1,4 +1,4 @@
-@extends('layouts.app') {{-- ganti dengan layout SB Admin 2 kamu --}}
+@extends('layouts.app') 
 
 @section('title', 'Manajemen Departemen')
 
@@ -38,10 +38,10 @@
                                     <a href="{{ route('departements.edit', $dept) }}" class="btn btn-warning btn-sm">
                                         <i class="fas fa-edit"></i>
                                     </a>
-                                    <form action="{{ route('departements.destroy', $dept) }}" method="POST" style="display:inline;">
+                                    <form action="{{ route('departements.destroy', $dept) }}" method="POST" class="d-inline delete-form">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus?')">
+                                        <button type="button" class="btn btn-danger btn-sm btn-delete">
                                             <i class="fas fa-trash"></i>
                                         </button>
                                     </form>
@@ -58,4 +58,7 @@
         </div>
     </div>
 </div>
+
+@include('components.delete-alert')
+
 @endsection
