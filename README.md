@@ -28,13 +28,8 @@ Fleetify Absensi System adalah aplikasi untuk mencatat kedisiplinan karyawan sec
 
 ---
 
-## ERD & Flowchart
+## ERD
 ![ERD Fleetify Absensi](db_fleetify.png)
-
-**Tabel Utama:**  
-- **Karyawan:** Menyimpan data karyawan  
-- **Departemen:** Menyimpan data departemen/divisi  
-- **Absensi:** Menyimpan catatan masuk & keluar karyawan  
 
 ---
 
